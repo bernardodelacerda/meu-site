@@ -2,21 +2,23 @@
 
   var cores = ["red","blue","green","black","white"];
 
+  geraCoresAleatorias()
+  
   function gerarNumeroAleatorio() {
     return Math.floor(Math.random() * 5);
   }
 
   function geraCoresAleatorias() {
-    return cores[gerarNumeroAleatorio()]
-  }
+    var element = document.getElementsByTagName("font")
+    element.style("color=''+cores[gerarNumeroAleatorio()]+''")
+ }
 
-  console.log(geraCoresAleatorias());
 </script>
 
 
 
 <div align ='center'>
-<font color="geraCoresAleatorias()">
+<font>
 hello website
 
 <br>
